@@ -1,0 +1,390 @@
+body {
+  font-family: monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  text-align: center;
+  margin: 0px;
+  overflow: hidden;
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+input {
+  font-family: monospace;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: #8510d8;
+  font-family: monospace;
+  border: none;
+  color: white;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+
+#addRectBtn {
+  margin-top:15px;
+}
+
+#image-div {
+  display: none;
+}
+
+#selection-panel {
+  background-color: #f0f0f0;
+  height: 100vh;
+  width: 300px;
+  overflow-y: none;
+}
+
+.controls-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between  ;
+  height: 100vh;
+}
+
+.instructions-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.instructions-div-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.line-p {
+  text-align: left;
+}
+
+.gallery-img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.gallery-img:hover {
+  cursor: pointer;
+}
+
+.radioButtonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.radioBtn {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.radioBtn:hover {
+  cursor: pointer;
+}
+
+.radioBtn label {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.radioBtn label:hover {
+  cursor: pointer;
+}
+
+#div1 {
+  height: 70vh;
+}
+
+#div2 {
+  height: inherit;
+  overflow: auto;
+  /* border: 1px solid red; */
+}
+
+#div3 {
+  height: auto;
+  /* border: 5px solid yellow; */
+}
+
+#dupeBtn {
+  background-color: #8510d8;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+#deleteBtn, #deleteBtn2 {
+  background-color: #555555;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#cropBtn {
+  background-color: #555555;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+#addRectBtn {
+  background-color: #4CAF50;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#addCircleBtn {
+  background-color: #008CBA;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#addPolygonBtn {
+  background-color: #DC143C;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#addPointBtn {
+  background-color: #f44336;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#removePointBtn {
+  background-color: #f44336;
+  font-family: monospace;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#modalBtn {
+  background-color: #FEB40E;
+  font-family: monospace;
+  border: none;
+  color: black;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+#restartBtn {
+  background-color: black;
+  font-family: monospace;
+  border: none;
+  color: #FEB40E;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#modalBtn h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#restartBtn h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#modalBtn ol {
+  list-style-position: inside;
+}
+
+#file {
+  margin-top: 10px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: #cccccc !important;
+  color: #666666 !important;
+  cursor: default !important;
+}
+
+.btn:hover, .custom-file-upload {
+  cursor: pointer;
+}
+
+.custom-file-upload-hover {
+  cursor: default;
+}
+
+.context-menu {
+  font-family: monospace;
+  position: absolute;
+  text-align: center;
+  background: #F6F7F9;
+  border: 1px solid black;
+}
+
+.context-menu ul {
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+  min-width: 150px;
+  list-style: none;
+}
+
+.context-menu ul li {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border: 1px solid black;
+  transition: 0.15s;
+}
+
+.context-menu ul li a {
+  text-decoration: none;
+}
+
+.context-menu ul li:hover {
+  background: #8510d8;
+  color: white;
+  transition: 0.15s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
